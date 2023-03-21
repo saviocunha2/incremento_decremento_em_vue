@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        
+        <div id="app">
+           <span v-bind:title="message">
+            Coloque o mouse aqui!
+            <br>
+            
+            {{counter}}
+
+            <button @click="increase">Somar</button>
+            <button @click="decrease">Diminuir</button>
+            <button @click="clearCounter">Resetar</button>
+           </span>
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
